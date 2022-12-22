@@ -10,7 +10,7 @@ const About = () => {
 						</h1>
 						<p className='text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto'>
 							Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-							taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh
+							taxidermy. juice poutine, ramps microdosing banh
 							mi pug.
 						</p>
 					</div>
