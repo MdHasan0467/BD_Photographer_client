@@ -4,11 +4,11 @@
 
 ## build with: React, Tailwind, MongoDB, Express JS, and Node JS
 
-Live site link: <https://assignment-eleven-30dd0.web.app/>
+Live site link: <https://bd-photographer.web.app/>
 
-client Repository: <https://github.com/Porgramming-Hero-web-course/b6a11-service-review-client-side-MdHasan0467>
+client Repository: <https://github.com/MdHasan0467/BD_Photographer_client>
 
-server Repository: <https://github.com/Porgramming-Hero-web-course/b6a11-service-review-server-side-MdHasan0467>
+server Repository: <https://github.com/MdHasan0467/BD_Photographer_Server>
 
 ### Steps are ------------------------------------------------
 
