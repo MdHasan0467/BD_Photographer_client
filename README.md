@@ -1,8 +1,8 @@
-## ================> Start <=============
+### ================> Start <=============
 
-# This project called BD Photography
+### This project called BD Photography
 
-## build with: React, Tailwind, MongoDB, Express JS, and Node JS
+### build with: React, Tailwind, MongoDB, Express JS, and Node JS
 
 Live site link: <https://bd-photographer.web.app/>
 
