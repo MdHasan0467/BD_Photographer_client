@@ -5,7 +5,7 @@ const Gallery = () => {
 	const [services, setServices] = useState([]);
 
 	useEffect(() => {
-		fetch('https://server-side-roan.vercel.app/GalleryServices')
+		fetch('https://bd-photographer-server.vercel.app/GalleryServices')
 			.then((res) => res.json())
 			.then((data) => setServices(data));
 	}, []);

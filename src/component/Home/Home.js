@@ -13,9 +13,9 @@ const Home = () => {
 	useTitle('Home');
 
 	useEffect(() => {
-		fetch('https://server-side-roan.vercel.app/service')
+		fetch('https://bd-photographer-server.vercel.app/service')
 			.then((res) => res.json())
-			.then((data) => setServices(data.reverse()));
+			.then((data) => setServices(data?.reverse()));
 	}, []);
 	console.log(services);
 
@@ -32,8 +32,12 @@ const Home = () => {
 				<h1 className='text-center text-yellow-400 font-semibold font-serif text-4xl'>
 					My services:
 				</h1>
+				{
+					services &&
+				
+				<>
 				<div className='grid gap-6 grid-cols-1 md:grid-cols-2 md:p-4 lg:grid-cols-3 '>
-					{services.map((service) => (
+					{services?.slice(0,3).map((service) => (
 						<ServiceCard key={service._id} service={service}></ServiceCard>
 					))}
 				</div>
@@ -45,6 +49,8 @@ const Home = () => {
 						See All
 					</Link>
 				</div>
+				</>
+}
 			</div>
 			<div className='my-20'>
 				<Static></Static>

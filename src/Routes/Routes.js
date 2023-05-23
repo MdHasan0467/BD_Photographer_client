@@ -32,7 +32,7 @@ const Routes = () => {
 					path: '/update/:id',
 					element: <UpdateReview></UpdateReview>,
 					loader: ({ params }) =>
-						fetch(`https://server-side-roan.vercel.app/update/${params.id}`),
+						fetch(`https://bd-photographer-server.vercel.app/update/${params.id}`),
 				},
 				{
 					path: '/about',
@@ -42,13 +42,13 @@ const Routes = () => {
 					path: '/service/:id',
 					element: <ServiceDetails></ServiceDetails>,
 					loader: ({ params }) =>
-						fetch(`https://server-side-roan.vercel.app/service/${params.id}`),
+						fetch(`https://bd-photographer-server.vercel.app/service/${params.id}`),
 				},
 				{
 					path: '/service/:id',
 					element: <UpdateReview></UpdateReview>,
 					loader: ({ params }) =>
-						fetch(`https://server-side-roan.vercel.app/service/${params.id}`),
+						fetch(`https://bd-photographer-server.vercel.app/service/${params.id}`),
 				},
 
 				{

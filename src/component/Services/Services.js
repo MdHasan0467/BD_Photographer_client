@@ -9,7 +9,7 @@ const Services = () => {
 
 	useTitle('All Services');
 	useEffect(() => {
-		fetch('https://server-side-roan.vercel.app/services')
+		fetch('https://bd-photographer-server.vercel.app/services')
 			.then((res) => res.json())
 			.then((data) => setServices(data));
 	}, []);

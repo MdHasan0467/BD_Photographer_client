@@ -58,7 +58,7 @@ const LogIn = () => {
 				
 				);
 				// //! request on the server to get a JWT token...
-				fetch('http://localhost:5000/jwt', {
+				fetch('https://bd-photographer-server.vercel.app/jwt', {
 					method: 'POST',
 					headers: {
 						'content-type': 'application/json',

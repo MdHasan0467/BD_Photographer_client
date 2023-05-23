@@ -5,7 +5,7 @@ const ReviewByID = ({ serviceDetails, reviews }) => {
 	const { _id, img, description, title, fee } = serviceDetails;
 	const [reviewsId, setReviewsId] = useState([]);
 	useEffect(() => {
-		fetch(`https://server-side-roan.vercel.app/reviews?email=${_id}`)
+		fetch(`https://bd-photographer-server.vercel.app/reviews?email=${_id}`)
 			.then((res) => res.json())
 			.then((data) => setReviewsId(data));
 	}, [_id]);

@@ -12,8 +12,8 @@ const UpdateReview = () => {
 			e.preventDefault();
 			console.log(reviews);
 			
-			// fetch(`https://server-side-roan.vercel.app/update/${storedReview._id}`, {
-			fetch(`https://server-side-roan.vercel.app/update/${storedReview._id}`, {
+			// fetch(`https://bd-photographer-server.vercel.app/update/${storedReview._id}`, {
+			fetch(`https://bd-photographer-server.vercel.app/update/${storedReview._id}`, {
 				method: 'PUT',
 				headers: {
 					'content-type': 'application/json',

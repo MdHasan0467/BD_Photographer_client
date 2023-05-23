@@ -12,10 +12,11 @@ const AddServices = () => {
 		return <progress className='progress progress-error w-56'></progress>;
 	}
 	const handleSubmit = (e) => {
+		
 		e.preventDefault();
 		console.log(addservices);
 
-		fetch('https://server-side-roan.vercel.app/services', {
+		fetch('https://bd-photographer-server.vercel.app/services', {
 			method: 'POST',
 			headers: {
 				'content-type': 'application/json',
@@ -26,7 +27,7 @@ const AddServices = () => {
 			.then((data) => {
 				if (data.acknowledged) {
 					toast.success('New Service Successfully Added!');
-					// e.target.reset();
+					e.target.reset();
 				}
 			});
 	};

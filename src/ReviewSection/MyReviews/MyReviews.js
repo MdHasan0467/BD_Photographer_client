@@ -28,7 +28,7 @@ const MyReviews = () => {
 
 	//! get data from mongodb by user email...&& get JWT token from the local storage by using header...
 	useEffect(() => {
-		fetch(`https://server-side-roan.vercel.app/reviews?email=${user?.email}`, {
+		fetch(`https://bd-photographer-server.vercel.app/reviews?email=${user?.email}`, {
 			headers: {
 				authorizaion:`Bearer ${localStorage.getItem('Login-token')}`
 			}
@@ -44,7 +44,7 @@ const MyReviews = () => {
 		);
 
 		if (proceed) {
-			fetch(`https://server-side-roan.vercel.app/reviews/${id}`, {
+			fetch(`https://bd-photographer-server.vercel.app/reviews/${id}`, {
 				method: 'DELETE',
 			})
 				.then((res) => res.json())

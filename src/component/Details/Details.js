@@ -30,7 +30,7 @@ const Details = () => {
 			email: user.email,
 		};
 
-		fetch('https://server-side-roan.vercel.app/reviews', {
+		fetch('https://bd-photographer-server.vercel.app/reviews', {
 			method: 'POST',
 			headers: {
 				'content-type': 'application/json',
@@ -49,7 +49,7 @@ const Details = () => {
 	};
 
 	useEffect(() => {
-		fetch(`https://server-side-roan.vercel.app/reviews/${_id}`)
+		fetch(`https://bd-photographer-server.vercel.app/reviews/${_id}`)
 			.then((res) => res.json())
 			.then((data) => setReviews(data));
 	}, [_id]);

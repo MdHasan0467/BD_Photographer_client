@@ -8,11 +8,11 @@ import '../shadin.css';
 const ServiceCard = ({ service }) => {
 	const { _id, img, title, description } = service;
 	return (
-		<div className='card card-compact w-96 bg-[#1e2b47] text-slate-200 shadow-xl  allborder hover:border-[#861600] border-solid border-2 md:rounded rounded-none'>
+		<div className='card card-compact group w-96 bg-[#1e2b47] text-slate-200 shadow-xl  allborder hover:border-[#861600] border-solid border-2 md:rounded rounded-none'>
 			<figure>
 				<PhotoProvider>
 					<PhotoView src={img}>
-						<img className='w-full h-[300px]' src={img} alt='Shoes' />
+						<img className='w-full h-[300px] object-cover opacity-75 group-hover:opacity-50 group-hover:scale-110 transition duration-300 ease-in-out' src={img} alt='' />
 					</PhotoView>
 				</PhotoProvider>
 			</figure>

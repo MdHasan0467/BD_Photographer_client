@@ -7,7 +7,7 @@ function App() {
   
   return (
 		<div className='App bg-[#090a27]'>
-		  <Routes></Routes>
+		  <Routes />
 		  <Toaster/>
 		</div>
 	);

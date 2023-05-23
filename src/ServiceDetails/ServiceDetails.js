@@ -40,7 +40,7 @@ const ServiceDetails = () => {
 			time,
 		};
 
-		fetch('https://server-side-roan.vercel.app/reviews', {
+		fetch('https://bd-photographer-server.vercel.app/reviews', {
 			method: 'POST',
 			headers: {
 				'content-type': 'application/json',
@@ -61,7 +61,7 @@ const ServiceDetails = () => {
 	const [getReviews, setGetReviews] = useState([{}, {}]);
 
 	useEffect(() => {
-		fetch(`https://server-side-roan.vercel.app/reviews/${_id}`)
+		fetch(`https://bd-photographer-server.vercel.app/reviews/${_id}`)
 			.then((res) => res.json())
 			.then((data) => {
 				setGetReviews(data.reverse());
